@@ -1,0 +1,54 @@
+form {
+    width: 31.04vw; /*447px*/
+    height: 24.93vw; /*359px*/
+    border-radius: 0.56vw; /*8px*/
+    background-image: url("image/form-popup-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    
+}
+p {
+    text-align: left;
+    padding-top: 2.08vw; /*30px*/ 
+    padding-right: 1.81vw; /*26px*/
+    padding-left: 1.81vw; /*26px*/
+    font-weight: 500;
+    font-size: 1.39vw; /*20px*/
+    line-height: 124%;
+    color: #333333;
+}
+input {
+    width: 22.92vw; /*330px*/
+    height: 2.99vw; /*43px*/
+    margin-left: 1.81vw; /*26px*/
+    margin-bottom: 2.08vw; /*30px*/
+    color: #828282;
+    border: 1px solid #828282;
+    border-radius: 0.56vw; /*8px*/ 
+    font-size: 1.04vw; /*15px*/
+}
+.button {
+    width: 15.49vw; /*223px*/
+    height: 2.99vw; /*43px*/
+    margin-top: 0.69vw; /*10px*/
+    background-color: #FFDB2D;
+    color: #333333;
+    border: none;
+    border-radius: 0.56vw; /*8px*/
+    padding: 0.83vw 1.39vw; /*12px 20px*/
+    font-size: 1.04vw; /*15px*/
+}
+.close {
+    position: absolute;
+    top: 1.39vw; /*20px*/ 
+    right: 1.74vw; /*25px*/
+    width: 100%;
+    height: auto;
+    max-width: 1.39vw; /*20px*/
+    font-size: 0;
+    background: none;
+    border: 0;
+}

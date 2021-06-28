@@ -1,0 +1,226 @@
+body{
+    width: 100%;
+    font-family: "Geometria";
+    color: #333333;
+    font-size: 1.25vw; /*18px*/
+    font-style: normal;
+    font-weight: normal;
+    line-height: 128%;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-top: 1.11vw; /*16px*/
+} 
+.logo {
+    align-self: center;
+}
+li {
+    list-style-type: none;
+}
+.nav {
+    display: flex;
+}
+.nav li {
+    margin-right: 2.78vw; /*40px*/
+}
+.nav li:last-child {
+    margin-right: 0;
+}
+.nav a {
+    text-decoration: none;
+    color: #333333;
+}
+.search {
+    width: 5.35vw; /*77px*/
+    height: 1.60vw; /*23px*/
+    border: none;
+    border-bottom: 1px dotted #333333;
+    margin-right: -3.47vw; /*50px*/
+}
+.consultation {
+    font-size: 1.04vw; /*15px*/
+    line-height: 130%;
+    padding: 0.83vw 1.39vw; /*12px 20px*/
+    border: 0.07vw solid #333333; /*1px*/
+    border-radius: 0.56vw; /*8px*/
+    box-shadow: none;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #333333;
+    background-color: white;
+}
+main {
+    margin-top: 6.81vw; /*98px*/
+    background-image: url("image/main-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 65.49vw 65.97vw; /*943px 950px*/
+    background-position-x: right;
+    background-position-y: bottom;
+    margin-bottom: 0;
+}
+.container {
+    margin-left: 2.08vw; /*30px*/
+    margin-bottom: 0;
+}
+aside {
+    width: 31.04vw; /*447px*/
+    height: 53.06vw; /*764px*/
+    background-color: #E0E0E0;
+    border-radius: 0.56vw; /*8px*/
+    float: right; 
+    margin-right: 2.08vw; /*30px*/
+}
+h4 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10.90vw; /*157px*/
+    font-weight: 500;
+    font-size: 1.39vw; /*20px*/
+    line-height: 124%;
+}
+.rubric {
+    margin: 0;
+    margin-bottom: 0.69vw; /*10px*/
+}
+h2 {
+    margin: 0;
+    margin-bottom: 1.39vw; /*20px*/
+    font-weight: bold;
+    font-size: 2.08vw; /*30px*/
+    line-height: 132%;
+}
+.caption {
+    width: 31.04vw; /*447px*/
+    font-size: 1.11vw; /*16px*/
+    line-height: 130%;
+    color: #828282;
+    margin: 0;
+    margin-bottom: 2.78vw; /*40px*/
+}
+.block {
+    display: grid;
+    grid-template-columns: 13.40vw 47.22vw; /*193px 680px*/
+    column-gap: 1.39vw; /*20px*/
+    row-gap: 0.35vw; /*5px*/ 
+    margin-bottom: 4.86vw; /*70px*/
+}
+.block:last-child {
+    margin-bottom: 0;
+    padding-bottom: 6.25vw; /*90px*/
+}
+.sertification {
+    grid-row-start: 1;
+    grid-row-end: 5;   
+}
+h3 {
+    font-weight: 500;
+    font-size: 1.67vw; /*24px*/
+    line-height: 2.08vw; /*30px*/
+    margin: 0;
+}
+.article {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: #F4F4F4;
+    margin: 0;
+    border-radius: 0.56vw; /*8px*/
+    border: none;
+    text-align: left;
+    outline: none;
+    font-weight: 500;
+}
+.article h6 {
+    width: 38.96vw; /*561px*/
+    margin-left: 2.08vw; /*30px*/
+    font-size: 1.11vw; /*16px*/
+    line-height: 150%;
+}
+.article p {
+    font-weight: normal;
+    font-size: 1.11vw; /*16px*/
+    line-height: 130%;
+    width: 38.26vw; /*551px*/
+    margin-left: 2.78vw; /*40px*/
+    margin-bottom: 2.57vw; /*37px*/
+}
+footer {
+    margin-top: 0;
+}
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333333;
+    color: #E0E0E0;
+}
+.feedback{
+    margin: 0;
+    width: 39.10vw; /*563px*/ 
+    font-size: 1.11vw; /*16px*/
+    line-height: 1.39vw; /*20px*/
+    margin-left: 2.08vw; /*30px*/
+    padding-top: 5.56vw; /*80px*/
+    padding-bottom: 5.56vw; /*80px*/
+}
+.feedback span {
+    margin-right: 2.78vw; /*40px*/
+}
+.footer-nav {
+    padding-left: 0;
+   
+}
+.footer-nav a {
+    text-decoration: none;
+    color: #E0E0E0;
+}
+.footer-nav h6 {
+    font-weight: 500;
+    font-size: 1.11vw; /*16px*/
+    line-height: 150%;
+    margin: 0;
+    margin-bottom: 1.39vw; /*20px*/
+}
+.footer-nav:last-child {
+    margin-bottom: 0;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 2.78vw; /*40px*/
+}
+.adress {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.11vw; /*16px*/
+    line-height: 130%;
+}
+.map {
+    margin-right: 2.08vw; /*30px*/
+    margin-top: 5.56vw; /*80px*/
+    margin-bottom: 5.56vw; /*80px*/ 
+    margin-left: 1.6vw; /*23px*/
+}
+.map-img {
+    height: auto;
+    width: 100%;
+    max-width: 55.35vw; /*797px*/
+}
+.geolocation {
+    position: relative;
+    right: -35.50vw; /*-511px*/  
+    bottom: 27vw; /*389px*/  
+    height: auto;
+    width: 100%;
+    max-width: 2.29vw;
+}
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.69vw 2.08vw;
+    font-size: 1.11vw;
+    line-height: 130%;
+}
