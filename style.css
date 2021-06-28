@@ -122,24 +122,49 @@ h3 {
     line-height: 2.08vw; /*30px*/
     margin: 0;
 }
-.article {
+.collapsible {
     grid-column-start: 2;
     grid-column-end: 3;
     background-color: #F4F4F4;
+    cursor: pointer;
     margin: 0;
     border-radius: 0.56vw; /*8px*/
     border: none;
     text-align: left;
     outline: none;
     font-weight: 500;
+    position: relative;
 }
-.article h6 {
+.collapsible h6 {
     width: 38.96vw; /*561px*/
     margin-left: 2.08vw; /*30px*/
     font-size: 1.11vw; /*16px*/
     line-height: 150%;
 }
-.article p {
+.collapsible:after {
+    content: url(image/more.png);
+    margin-left: 0.35vw; /*5px*/
+    position: absolute;             
+    top: 40%;
+    right: 3.19vw; /*46px*/                     
+}
+  
+.active:after {
+    content: url(image/more.png);
+    transform: translate(0) rotate(45deg);
+}
+.content {
+    padding: 0 1.25vw; /*18px*/
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #F4F4F4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-radius: 0.56vw; /*8px*/
+    margin-top: -1.39vw; /*20px*/ 
+}
+.content p {
     font-weight: normal;
     font-size: 1.11vw; /*16px*/
     line-height: 130%;
@@ -220,8 +245,8 @@ footer {
 .copyright {
     display: flex;
     justify-content: space-between;
-    padding: 0.69vw 2.08vw;
-    font-size: 1.11vw;
+    padding: 0.69vw 2.08vw; /*10px 30px*/
+    font-size: 1.11vw; /*16px*/
     line-height: 130%;
 }
 /* Модальный (фон) */
@@ -237,69 +262,68 @@ footer {
     overflow: auto; /* Включите прокрутку, если это необходимо */
     background-color: rgb(0,0,0); /* Цвет запасной вариант  */
     background-color: rgba(0,0,0,0.4); /*Черный с непрозрачностью */
-  }
+}
   
   /* Модальное содержание */
-  .modal-content {
+.modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 0;
-    border: 1px solid #888;
-    width: 80%;
-    width: 31.04vw;
-    height: 24.93vw;
-    border-radius: 0.56vw;
+    border: 0.07vw solid #888; /*1px*/
+    width: 31.04vw; /*447 px*/
+    height: 24.93vw; /*359px*/
+    border-radius: 0.56vw; /*8px*/
     background-image: url("image/form-popup-bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
     margin-left: auto;
     margin-right: auto;
-  }
-  
+}
+
   /* Кнопка закрытия */
-  .close {
+.close {
     color: #000;
     float: right;
-    font-size: 32px;
+    font-size: 2.22vw; /*32px*/
     font-weight: bold;
-    margin-right: 5px;
-  }
-  
-  .close:hover,
-  .close:focus {
-    
+    margin-right: 0.35vw; /*5px*/
+}
+.close:hover,
+.close:focus {
     text-decoration: none;
     cursor: pointer;
   }
- .modal-content p {
+.modal-content p {
     text-align: left;
-    padding-top: 30px;
-    padding-right: 26px;
-    padding-left: 26px;
+    padding-top: 2.08vw; /*30px*/
+    padding-right: 1.81vw; /*26px*/
+    padding-left: 1.81vw; /*26px*/
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.39vw; /*20px*/
     line-height: 124%;
     color: #333333;
  }
- .modal-content input {
-    width: 330px;
-    height: 43px;
-    margin-left: 26px;
-    margin-bottom: 30px;
+.modal-content input {
+    width: 22.92vw; /*330px*/
+    height: 2.99vw; /*43px*/
+    margin-left: 1.81vw; /*26px*/
+    margin-bottom: 2.08vw; /*30px*/
     color: #828282;
-    border: 1px solid #828282;
-    border-radius: 8px;
-    font-size: 15px;
+    border: 0.07vw solid #828282; /*1px*/
+    border-radius: 0.56vw; /*8px*/
+    font-size: 1.04vw; /*15px*/
 }
-.modal-content .button {
-    width: 223px;
-    height: 43px;
-    margin-top: 10px;
+.modal-content .submit {
+    width: 15.49vw; /*223px*/
+    height: 2.99vw; /*43px*/
+    margin-top: 0.69vw; /*10px*/
     background-color: #FFDB2D;
     color: #333333;
     border: none;
-    border-radius: 8px;
-    padding: 12px 20px;
-    font-size: 15px;
+    border-radius: 0.56vw; /*8px*/
+    padding: 0.83vw 1.39vw; /*12px 20px*/
+    font-size: 1.04vw; /*15px*/
+    color: #333333;
+    margin-left: 1.81vw; /*26px*/
 }
