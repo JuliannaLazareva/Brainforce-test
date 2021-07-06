@@ -1,0 +1,78 @@
+/* Модальный (фон) */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть на вершине */
+    padding-top: 100px; /* Расположение коробки */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включите прокрутку, если это необходимо */
+    background-color: rgb(0,0,0); /* Цвет запасной вариант  */
+    background-color: rgba(0, 0, 0, 0.4); /*Черный с непрозрачностью */
+}
+  
+  /* Модальное содержание */
+.modal__content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 0.07vw solid #888; /*1px*/
+    width: 31.04vw; /*447 px*/
+    height: 24.93vw; /*359px*/
+    border-radius: 0.56vw; /*8px*/
+    background-image: url("image/form-popup-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  /* Кнопка закрытия */
+.modal__close {
+    color: #000;
+    float: right;
+    font-size: 2.22vw; /*32px*/
+    font-weight: bold;
+    margin-right: 0.35vw; /*5px*/
+}
+.modal__close:hover,
+.modal__close:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal__content p {
+    text-align: left;
+    padding-top: 2.08vw; /*30px*/
+    padding-right: 1.81vw; /*26px*/
+    padding-left: 1.81vw; /*26px*/
+    font-weight: 500;
+    font-size: 1.39vw; /*20px*/
+    line-height: 124%;
+    color: #333333;
+ }
+.modal__content input {
+    width: 22.92vw; /*330px*/
+    height: 2.99vw; /*43px*/
+    margin-left: 1.81vw; /*26px*/
+    margin-bottom: 2.08vw; /*30px*/
+    color: #828282;
+    border: 0.07vw solid #828282; /*1px*/
+    border-radius: 0.56vw; /*8px*/
+    font-size: 1.04vw; /*15px*/
+}
+.modal__content .submit {
+    width: 15.49vw; /*223px*/
+    height: 2.99vw; /*43px*/
+    margin-top: 0.69vw; /*10px*/
+    background-color: #FFDB2D;
+    color: #333333;
+    border: none;
+    border-radius: 0.56vw; /*8px*/
+    padding: 0.83vw 1.39vw; /*12px 20px*/
+    font-size: 1.04vw; /*15px*/
+    color: #333333;
+    margin-left: 1.81vw; /*26px*/
+}

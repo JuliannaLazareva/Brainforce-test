@@ -1,0 +1,56 @@
+.modal2{
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 2; /* Сидеть на вершине */
+    /*padding-top: 100px; /* Расположение коробки */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включите прокрутку, если это необходимо */
+    background-color: rgb(0,0,0); /* Цвет запасной вариант  */
+    background-color: rgba(0,0,0,0.4); /*Черный с непрозрачностью */
+}
+.modal2__content {
+    width: 79.65vw; /*1147px*/ 
+    height: 23.13vw; /*333px*/
+    background-image: url("image/form-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10% auto; /* 10% сверху и по центру */
+    padding: 20px;
+    position: relative;
+}
+.form {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+.modal2__content h2 {
+    font-weight: 500;
+    font-size: 2.50vw; /*36px*/
+    line-height: 124%;
+    text-align: center;
+    color: #333333;
+    
+}
+.modal2__content p {
+    font-weight: 500;
+    font-size: 1.39vw; /*20px*/
+    line-height: 124%;
+    text-align: center;
+    color: #333333;
+}
+.modal2__close {
+    color: #000;
+    float: right;
+    font-size: 2.22vw; /*32px*/
+    font-weight: bold;
+    margin-right: 3.47vw; /*50px*/ 
+    margin-top: 1.39vw; /*20px*/
+}
+.modal2__close:hover,
+.modal2__close:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
